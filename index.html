@@ -1,0 +1,24 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>扫描demo</title>
+
+	
+	<script src="http://webresource.c-ctrip.com/code/lizard/2.2/web/lizard.seed.js"></script>
+	<script src="qrcode.js"></script>
+	<script>
+	    $(document).bind('mobileinit',function(){
+	        $.mobile.changePage.defaults.changeHash = false;
+	        $.mobile.hashListeningEnabled = false;
+	        $.mobile.pushStateEnabled = false;
+	    });
+	</script> 
+
+</head>
+<body>
+	<div class="main-viewport"></div>
+	<div><button style="height:200px;width:200px" id="js_scan">扫描</button></div>
+	<div id="js_code"></div>
+</body>
+</html>
